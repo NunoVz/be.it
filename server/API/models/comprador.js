@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
 
 const comprador = mongoose.Schema({
-    author: { type: String, require: true },
+    nome: { type: String, require: true },
+    telemovel: { type: Number, require: true },
+    email: { type: String, require: true },
+    pass: { type: String, require: true },
 });
 
-module.exports = mongoose.model("Alumni", alumni);
+module.exports = mongoose.model("Comprador", comprador);
