@@ -1,4 +1,4 @@
-#login{
+#login {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,20 +6,23 @@
     justify-content: center;
     align-items: center;
 }
-.toggle-container{
+
+.toggle-container {
     width: 25vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
-.login-toggle{
+
+.login-toggle {
     display: flex;
     background-color: white !important;
     color: #73AD21;
     align-items: center;
     justify-content: center;
 }
-.register-toggle{
+
+.register-toggle {
     display: flex;
     background-color: #73AD21 !important;
     color: white;
@@ -27,17 +30,19 @@
     justify-content: center;
     text-decoration: none;
 }
-.toggleOption{
+
+.toggleOption {
     width: 8vw;
     height: 4vh;
     background-color: #73AD21;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-style: solid; 
+    border-style: solid;
     border-color: #73AD21;
     border-width: 2px 2px 0 2px;
 }
-.container-round-text{
+
+.container-round-text {
     margin: 0 5vw;
     width: 30vw;
     height: 40vh;
@@ -48,27 +53,33 @@
     border-radius: 25px;
     border: 2px solid #73AD21;
 }
-.form1{
-    height: 35vh;
+
+.form1 {
+    padding: 0 1.5vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form1 input{
+
+.form1 input {
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    width: 12vw !important;
+    background-color: #E1F9D7;
+    border: 2px solid #E1F9D7;
 }
-.logIn-button{
+
+.logIn-button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    width: 12vw;
+    width: 6vw;
     height: 4vh;
     border-radius: 25px;
-    border: 2px solid #73AD21;
-    background-color: #ffffff;
+    border: 2px solid #E1F9D7;
+    background-color: #E1F9D7;
     color: black;
     text-decoration: none;
     font-size: 0.85em;

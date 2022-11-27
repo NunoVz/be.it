@@ -11,7 +11,6 @@ import Landing from "./Views/Landing";
 import Login from "./Views/login";
 import Perfil from "./Views/perfil";
 import Register from "./Views/register"
-import Store from "./Views/store";
 import ProdPage from "./Views/prodpagina";
 import Homeview from './Views/HomeView';
 
@@ -25,8 +24,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/produto" element={<ProdPage />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/homeview" element={<Homeview />} />
+          <Route path="/store" element={<Homeview />} />
         </Routes>
       </Router>
     </div>
