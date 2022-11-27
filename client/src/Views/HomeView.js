@@ -1,134 +1,56 @@
 import React from 'react';
-
+import { useState, useEffect } from 'react';
 import "./css/homeview.css";
+import useFetch from "./useFetch";
 
-let generateShops = () => {
-    //receber os dados do servidor
-    let shops = [];
-    let produto_html = [];
-    for (let i = 0; i < 6; i++) {
-        produto_html.push(
-            <div className='produtoCard'>
-                {/*receber imagem do servidor*/}
-                <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                {/*receber imagem do servidor*/}
-                <h2 className='produtocard-titulo'>Produto nome</h2>
-                {/*receber imagem do servidor*/}
-                <h3 className='produtoCard-preco'>Produto preço</h3>
-                {/*receber imagem do servidor*/}
-                <p className='produtoCard-desc'>Produto desc</p>
-                {/*receber imagem do servidor*/}
-                <div className='produtoCard-comprar'>
-                    <a href=''>Comprar</a>
-                </div>
-            </div>
-        );
-    }
-    return produto_html;
-}
 
 const Homeview = () => {
-    
-    
-    return(
+    const { data: prodsAux, isPending } = useFetch('http://localhost:8000/getProds');
+    const [filter, setFilter] = useState("All");
+    const [prods, setProds] = useState(prodsAux);
+    useEffect(() => {
+        let result = prodsAux;
+        switch (filter) {
+            case "All":
+                result = prodsAux;
+                break;
+            case "Coimbra":
+                result = prodsAux.filter(prodsAux => prodsAux.local === 'Coimbra')
+                break;
+            case "Porto":
+                result = prodsAux.filter(prodsAux => prodsAux.local === 'Porto')
+                break;
+        }
+        // So funciona assim wtf xD
+        setProds(result)
+        setProds(result)
+
+    }, [filter, isPending]);
+    console.log(prods);
+    return (
+
         <div className='body'>
             <div className='containerGeral'>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='produtoWrapper'>
-                    <div className='produtoCard'>
-                        {/*receber imagem do servidor*/}
-                        <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img> 
-                        {/*receber imagem do servidor*/}
-                        <h2 className='produtocard-titulo'>Produto nome</h2>
-                        {/*receber imagem do servidor*/}
-                        <h3 className='produtoCard-preco'>Produto preço</h3>
-                        {/*receber imagem do servidor*/}
-                        <p className='produtoCard-desc'>Produto desc</p>
-                        {/*receber imagem do servidor*/}
-                        <div className='produtoCard-comprar'>
-                            <a href=''>Comprar</a>
-                        </div>
-                    </div>
-                </div>
+                {prods != null &&
+                    prods.map(data => {
+                        return (
+                            <div className='produtoWrapper'>
+                                <div className='produtoCard'>
+                                    <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img>
+                                    <h2 className='produtocard-titulo'>{data.nome}</h2>
+                                    <h3 className='produtoCard-preco'>{data.preco}/Kg</h3>
+                                    <p className='produtoCard-desc'>{data.local}</p>
+                                    <div className='produtoCard-comprar'>
+                                        <a href=''>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+
+
+
             </div>
         </div>
     );
