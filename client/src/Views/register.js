@@ -20,7 +20,8 @@ const register = () => {
                 <div className='container-round-text'>
                     <form className='form1'>
                         <div>Email</div>
-                        <input type="text" id="email" name="email"></input><br/>
+                        <label for="text">First name:</label><br></br>
+                        <input type="text" id="email" name="email"></input><br />
                         <div>Password</div>
                         <input type="password" id="password" name="password"></input>
                         <a className='logIn-button' href='./store'>Register</a>

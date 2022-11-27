@@ -34,7 +34,7 @@ const NavBar = () => {
                                 </form>
                             </li>
                             <li className="menu-item">
-                                <Link className='link' to="/store"> <li className='textRegister'>Registra-te aqui!</li></Link>
+                                <Link className='link' to="/register"> <li className='textRegister'>Registra-te aqui!</li></Link>
                             </li>
                         </ul>
                     ) : null}

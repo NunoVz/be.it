@@ -55,6 +55,7 @@
 }
 
 .form1 {
+
     padding: 0 1.5vw;
     height: auto;
     display: flex;
@@ -68,20 +69,54 @@
     width: 12vw !important;
     background-color: #E1F9D7;
     border: 2px solid #E1F9D7;
+    margin-top: 1vh;
 }
 
 .logIn-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    width: 6vw;
+    width: 8vw;
     height: 4vh;
     border-radius: 25px;
-    border: 2px solid #E1F9D7;
-    background-color: #E1F9D7;
-    color: black;
+    background-color: #73AD21;
+    color: #1E1E1E;
     text-decoration: none;
-    font-size: 0.85em;
+    font-size: 1.2em;
     font-weight: bold;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+
+.secRegister {
+    position: relative;
+    height: 100vh;
+    background-image: url(../fundo2-11_4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.midlecontainer {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    top: 15vh;
+}
+
+.RegisterForm {
+    outline: 0;
+    width: 25vw;
+    border-width: 0 0 2px;
+    border-color: black;
+    margin-bottom: 3vh;
+    background-color: #E1F9D7;
+
+}
+
+.FormLabel {
+    margin-top: 2vh !important;
 }
