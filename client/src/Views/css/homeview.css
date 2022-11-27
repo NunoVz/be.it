@@ -84,10 +84,13 @@
     background-color: rgba(204, 238, 191, 1);
     border-radius: 25px;
     height: 5vh;
-    width: 10vw;
+    width: 12vw;
     margin-left: 10px;
     margin-right: 45px;
     text-decoration: underline;
+}
+.addButton a{
+    color: black;
 }
 .produtoCard-line-container{
     display: flex;

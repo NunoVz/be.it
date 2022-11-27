@@ -40,7 +40,7 @@ const Homeview = () => {
                 <div className='container'>
                     <img className="searchIcon"src="assets/imgs/LUPA-13.png" alt='lupa'/>
                     <input type="text" placeholder="Search..." />
-                    <h4 className='addButton'>+ADICIONAR</h4>
+                    <h4 className='addButton'><a href='../createProduct'>+ADICIONAR</a></h4>
                 </div>
             </div>
             <div className='containerGeral'>
