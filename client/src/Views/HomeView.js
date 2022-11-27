@@ -30,6 +30,14 @@ const Homeview = () => {
     return (
 
         <div className='body'>
+            <div className='searchBar'>
+                <h1>Produtos</h1>
+                <img className='searchIcon' src='assets/imgs/LUPA-13.png' alt='lupa'/>
+                <form>
+                    <input type='text' placeholder='Pesquisar'/>
+                </form>
+                <div className='addButton'>+Adcionar</div>
+            </div>
             <div className='containerGeral'>
                 {prods != null &&
                     prods.map(data => {
