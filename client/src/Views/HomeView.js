@@ -48,7 +48,7 @@ const Homeview = () => {
 
                     <Link className='link' to="/store"> <li className='text'>LOJA</li></Link>
                     <div className="dropdown">
-                        <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/iconlogin.svg'></img>
+                        <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/icone-13.png'></img>
                         {open ? (
                             <ul className="menu">
                                 <li className="menu-item">
