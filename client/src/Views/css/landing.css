@@ -2,6 +2,7 @@
     overflow: hidden;
 }
 #banner{
+    margin-top: 12vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -33,13 +34,13 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: #f2f2f2;
     padding: 5vh 0;
 }
-.about-us-text{
+.container-round-text{
     margin: 0 5vw;
     width: 30vw;
     height: 45%;
@@ -50,17 +51,36 @@
     border-radius: 25px;
     border: 2px solid #73AD21;
 }
-.about-us-text-icon{
-    width: 10vw;
-    height: 10vw;
-    background-color: #73AD21;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .img-container{
     width: 50%;
     height: 50%;
     object-fit: contain;
+}
+
+#sustentabilidade{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    padding: 5vh 0;
+}
+
+#contactos{
+    height: 30vh;
+    width: 100vw;
+    background-color: #6FBF58;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#contactos h1{
+    color: white;
+    font-size: 1.5em;
+    margin-left: 7vw;
+    margin-right: 8vw;
 }

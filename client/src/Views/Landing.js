@@ -13,34 +13,59 @@ const Landing = () => {
         <div className='body'>
             <NavBar/>
             <section id='banner'>
-                <img src='https://media-manager.noticiasaominuto.com/1920/naom_62d6b6f19c36c.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNTYwLCJjcm9wSGVpZ2h0IjoxNDQwLCJjcm9wWCI6MCwiY3JvcFkiOjExMn19' className='banner-img' alt='banner' />
+                <img src='assets/imgs/fundo1-08_1.png' className='banner-img' alt='banner' />
                 <div className='banner-text'>LOOT</div>
             </section>
             <section id='about-us'>
-                <div className='about-us-text'>
+                <div className='container-round-text'>
                     <img src='https://static.thenounproject.com/png/539236-200.png' alt='about-us-text-icon' className='img-container'/>
                     <h1>about us</h1>
                     <p>about us</p>
                 </div>
-                <div className='about-us-text'>
+                <div className='container-round-text'>
                     <img src='https://static.thenounproject.com/png/539236-200.png' alt='about-us-text-icon' className='img-container'/>
                     <h1>about us</h1>
                     <p>about us</p>
                 </div>
-                <div className='about-us-text'>
+                <div className='container-round-text'>
                     <img src='https://static.thenounproject.com/png/539236-200.png' alt='about-us-text-icon' className='img-container'/>
                     <h1>about us</h1>
                     <p>about us</p>
                 </div>
-                <div className='about-us-text'>
+                <div className='container-round-text'>
                     <img src='https://static.thenounproject.com/png/539236-200.png' alt='about-us-text-icon' className='img-container'/>
                     <h1>about us</h1>
                     <p>about us</p>
                 </div>
             </section>
-            <section className='sustentabilidade'>
-                <div className='sustentabilidade-text'>
+            <section id='sustentabilidade'>
+                <div className='container-round-text'>
+                    <img src='https://static.thenounproject.com/png/539236-200.png' alt='sustentabilidade-text-icon' className='img-container'/>
                     <h1>sustentabilidade</h1>
+                    <p>sustentabilidade</p>
+                </div>
+                <div className='container-round-text'>
+                    <img src='https://static.thenounproject.com/png/539236-200.png' alt='sustentabilidade-text-icon' className='img-container'/>
+                    <h1>sustentabilidade</h1>
+                    <p>sustentabilidade</p>
+                </div>
+                <div className='container-round-text'>
+                    <img src='https://static.thenounproject.com/png/539236-200.png' alt='sustentabilidade-text-icon' className='img-container'/>
+                    <h1>sustentabilidade</h1>
+                    <p>sustentabilidade</p>
+                </div>
+                <div className='container-round-text'>
+                    <img src='https://static.thenounproject.com/png/539236-200.png' alt='sustentabilidade-text-icon' className='img-container'/>
+                    <h1>sustentabilidade</h1>
+                    <p>sustentabilidade</p>
+                </div>
+            </section>
+            <section id='contactos'>
+                <div className='contactos1'>
+                    <h1>contactos</h1>
+                </div>
+                <div className='contactos2'>
+                    <h1>contactos</h1>
                 </div>
             </section>
         </div>
