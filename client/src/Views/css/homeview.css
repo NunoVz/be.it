@@ -1,13 +1,14 @@
 .containerGeral {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     background-image: url('../../fundoloja.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-left: 9vw;
 }
 
 
@@ -15,9 +16,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 7vh 5vw 3vh 5vw;
-    width: 21vw;
-    height: 44vh;
+    margin: 7vh 0 3vh 0;
+    width: 20vw;
+    height: 37vh;
     background-color: rgba(225, 249, 215, 1);
     border-radius: 25px;
 }
@@ -27,10 +28,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 20vw;
-    height: 43vh;
+    width: 18vw;
+    height: 35vh;
     background-color: rgba(179, 226, 164, 1);
     border-radius: 25px;
+    padding: 10px 0 10px 0;
 }
 
 .produtocard-titulo {
