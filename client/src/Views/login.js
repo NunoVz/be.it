@@ -22,7 +22,7 @@ const Login = () => {
                 </li>
                 <div className='ContainerLogin'>
 
-                    <Link className='link' to="/store"> <li className='text'>Loja</li></Link>
+                    <Link className='link' to="/store"> <li className='text'>LOJA</li></Link>
                     <div className="dropdown">
                         <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/iconlogin.svg'></img>
                         {open ? (

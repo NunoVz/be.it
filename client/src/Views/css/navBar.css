@@ -22,8 +22,8 @@
 
 .ContainerLogin {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: 2.7vh;
+    right: -3vw;
     width: 15vw;
     object-fit: contain;
     flex-direction: row;
@@ -47,6 +47,8 @@
     font-size: 30px;
     margin: auto 0 !important;
     line-height: 43px;
+    font-family: Abee;
+
 }
 
 .link {

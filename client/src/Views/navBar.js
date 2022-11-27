@@ -19,7 +19,7 @@ const NavBar = () => {
             </li>
             <div className='ContainerLogin'>
 
-                <Link className='link' to="/store"> <li className='text'>Loja</li></Link>
+                <Link className='link' to="/store"> <li className='text'>LOJA</li></Link>
                 <div className="dropdown">
                     <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/iconlogin.svg'></img>
                     {open ? (
@@ -34,7 +34,7 @@ const NavBar = () => {
                                 </form>
                             </li>
                             <li className="menu-item">
-                                <Link className='link' to="/register"> <li className='textRegister'>Registra-te aqui!</li></Link>
+                                <Link className='link' to="/register"> <li className='textRegister'>Regista-te aqui!</li></Link>
                             </li>
                         </ul>
                     ) : null}

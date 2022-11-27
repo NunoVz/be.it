@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: Abee;
+  src: url(./FONTES/ABeeZee/ABeeZee-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jost-regular;
+  src: url(./FONTES/Jost/static/Jost-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jost-Medium;
+  src: url(./FONTES/Jost/static/Jost-Medium.ttf);
+}
+
+@font-face {
+  font-family: Jost-light;
+  src: url(./FONTES/Jost/static/Jost-Light.ttf);
+}
+
+@font-face {
+  font-family: Jost-SemiBold;
+  src: url(./FONTES/Jost/static/Jost-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Jost-ExtraBold;
+  src: url(./FONTES/Jost/static/Jost-ExtraBold.ttf);
+}
