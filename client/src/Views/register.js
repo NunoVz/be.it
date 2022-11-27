@@ -15,7 +15,7 @@ const register = () => {
                 <h1>REGISTER</h1>
                 <div className='toggle-container'>
                     <a className='toggleOption login-toggleR' href='./login'>Login</a>
-                    <div className='toggleOption register-toggleR' href='./login'>Register</div>
+                    <div className='toggleOption register-toggleR'>Register</div>
                 </div>
                 <div className='container-round-text'>
                     <form className='form1'>

@@ -1,11 +1,51 @@
-.body{
+.containerGeral{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url('../../../public/assets/imgs/fundo1-08_1.png');
+}
+
+.produtoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 5vw 3vh 5vw;
+    width: 21vw;
+    height: 44vh;
+    background-color: rgba(225, 249, 215, 1);
+    border-radius: 25px;
 }
 .produtoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 20vw;
-    height: 40vh;
+    height: 43vh;
     background-color: rgba(179, 226, 164, 1);
+    border-radius: 25px;
+}
+
+.produtocard-titulo{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.produtoCard-preco{
+    font-size: 1em;
+    text-align: center;
+    margin: 0 !important;
+}
+.produtoCard-desc{
+    font-size: 1em;
+    text-align: center;
+    margin: 0 !important;
+}
+.produtoCard img{
+    width: 14vw;
+    height: 12vh;
+    border-radius: 25px;
 }
