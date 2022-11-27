@@ -1,5 +1,6 @@
 .body{
     overflow: hidden;
+    font-family: 'Jost', sans-serif; 
 }
 #banner{
     margin-top: 12vh;
@@ -49,7 +50,7 @@
     padding: 5vh 0;
 }
 .container-round-text{
-    margin: 0 5vw;
+    margin: 0 0vw;
     width: 30vw;
     height: 45%;
     display: flex;
@@ -65,14 +66,19 @@
     object-fit: contain;
 }
 .container-round-text h2{
+    font-family: 'Jost', sans-serif; 
+    font-variation-settings: "wght" 800 ;
+    color: #6FBF58;
     font-size: 2em;
     text-align: center;
     margin: 5px 0 5px 0;
 }
 .container-round-text p{
-    font-size: 1em;
-    text-align: center;
-    margin: 8px;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 #sustentabilidade{
     width: 100vw;
@@ -84,6 +90,7 @@
     flex-wrap: wrap;
     background-color: rgba(225, 249, 215, 1);
     padding: 5vh 0;
+    
 }
 
 #contactos{
@@ -96,8 +103,13 @@
     justify-content: space-between;
 }
 #contactos h1{
-    color: white;
-    font-size: 1.5em;
+    font-variant: "Jost";
+    font-variation-settings: "wght" 100;
+    color: #1E1E1E;
     margin-left: 7vw;
     margin-right: 8vw;
+    margin-bottom: 11vw;
+}
+.logoFimLanding{
+    padding: 30px;
 }
