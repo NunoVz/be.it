@@ -13,6 +13,7 @@ import Perfil from "./Views/perfil";
 import Register from "./Views/register"
 import ProdPage from "./Views/prodpagina";
 import Homeview from './Views/HomeView';
+import CreateProduct from './Views/createProduct';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/produto" element={<ProdPage />} />
           <Route path="/store" element={<Homeview />} />
+          <Route path="/createProduct" element={<CreateProduct />} />
         </Routes>
       </Router>
     </div>
