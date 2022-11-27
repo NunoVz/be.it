@@ -9,4 +9,4 @@ const funcionario = mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("Funcionario", funcionario);
+module.exports = mongoose.model("Funcionarios", funcionario);

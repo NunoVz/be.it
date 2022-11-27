@@ -2,32 +2,35 @@ const mongoose = require("mongoose");
 const axios = require('axios');
 
 
-const Comprador = require("../models/comprador");
 const Vendedor = require("../models/vendedor");
 const Funcionario = require("../models/funcionario");
-const Loja = require("../models/loja");
 const produto = require("../models/produto");
 const waste = require("../models/prodWaste");
 
 
 
 module.exports = {
-  getAll: async (req, res, next) => {
-    console.log("Ola");
+  getProds: async (req, res, next) => {
+    produto.find().then(result => {
+      console.log(result);
+      res.status(200).json(result)
+    })
   },
-  postComp: async (req, res, next) => {
+  getProd: async (req, res, next) => {
+    id = req.query.id;
+    produto.findOne({ _id: id }).then(result => {
 
-    const newComp = new Comprador({
-      nome: req.body.nome,
-      telemovel: req.body.telemovel,
-      email: req.body.email,
-      pass: req.body.pass
-    });
-    newComp.save();
+      res.status(200).json(result)
+    })
+  },
+  getCompProd: async (req, res, next) => {
+    id = req.query.id;
+    produto.findOne({ _id: id }).then(result => {
+      Vendedor.findOne({ _id: result.idVendedor }).then(result => {
 
-
-    res.status(200).send("Ok");
-
+        res.status(200).json(result);
+      })
+    })
   },
   postFunc: async (req, res, next) => {
 
@@ -44,22 +47,6 @@ module.exports = {
     res.status(200).send("Ok");
 
   },
-  postLoja: async (req, res, next) => {
-
-    const newLoja = new Loja({
-      nome: req.body.nome,
-      imagem: req.body.imagem,
-      desc: req.body.desc,
-      idVendedor: req.body.Vendedor,
-      local: req.body.local,
-      DataRegisto: new Date()
-    });
-    newLoja.save();
-
-
-    res.status(200).send("Ok");
-
-  },
   postprod: async (req, res, next) => {
 
     const newProd = new produto({
@@ -68,7 +55,7 @@ module.exports = {
       desc: req.body.desc,
       stock: req.body.stock,
       preco: req.body.preco,
-      Loja: req.body.loja,
+      idVendedor: req.query.id,
       tag: req.body.tag
     });
     newProd.save();

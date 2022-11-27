@@ -7,6 +7,8 @@ const prodWaste = mongoose.Schema({
     quantidade: { type: Number, require: true },
     Loja: { type: Object, require: true },
     tag: { type: String, require: true },
+    idLoja: { type: String, require: true },
+
 });
 
-module.exports = mongoose.model("ProdWaste", prodWaste);
+module.exports = mongoose.model("ProdWastes", prodWaste);

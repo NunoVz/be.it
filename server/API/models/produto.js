@@ -6,9 +6,10 @@ const produto = mongoose.Schema({
     imagem: { type: String, require: true },
     stock: { type: Number, require: true },
     preco: { type: String, require: true },
-    Loja: { type: Object, require: true },
     tag: { type: String, require: true },
+    idVendedor: { type: String, require: true },
+    local: { type: String, require: true },
 
 });
 
-module.exports = mongoose.model("Produto", produto);
+module.exports = mongoose.model("Produtos", produto);

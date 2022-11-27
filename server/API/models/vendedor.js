@@ -8,4 +8,4 @@ const vendedor = mongoose.Schema({
     NIF: { type: Number, require: true },
 });
 
-module.exports = mongoose.model("Vendedor", vendedor);
+module.exports = mongoose.model("Vendedores", vendedor);

@@ -3,15 +3,17 @@ const router = express.Router();
 const memberControllers = require('../controllers/member');
 
 
-router.route("/getAll").get(memberControllers.getAll);
+router.route("/getProds").get(memberControllers.getProds);
+router.route("/getProd").get(memberControllers.getProd);
+router.route("/getProdComp").get(memberControllers.getCompProd);
+
+
 
 //Posts
-router.route("/addVend").post(memberControllers.getAll);
-router.route("/addLoja").post(memberControllers.getAll);
-router.route("/addProd").post(memberControllers.getAll);
-router.route("/addWaste").post(memberControllers.getAll);
-router.route("/addComp").post(memberControllers.getAll);
-router.route("/addFunc").post(memberControllers.getAll);
+router.route("/addVend").post(memberControllers.postVend);
+router.route("/addProd").post(memberControllers.postprod);
+router.route("/addWaste").post(memberControllers.postWaste);
+router.route("/addFunc").post(memberControllers.postFunc);
 
 
 

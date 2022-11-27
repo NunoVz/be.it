@@ -21,13 +21,15 @@ const corsOpts = {
 };
 
 mongoose.connect(
-  "mongodb+srv://biit:biit@biit.6sq07wc.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://beit:beit@beit.knsvccw.mongodb.net/test",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+
   }
 );
 mongoose.Promise = global.Promise;
+
 
 
 app.use(cors(corsOpts));
@@ -71,4 +73,5 @@ app.use((err, req, res, next) => {
     message: "Error not found! Status: " + status,
   });
 });
+
 module.exports = app;

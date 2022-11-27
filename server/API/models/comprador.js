@@ -7,4 +7,4 @@ const comprador = mongoose.Schema({
     pass: { type: String, require: true },
 });
 
-module.exports = mongoose.model("Comprador", comprador);
+module.exports = mongoose.model("Compradores", comprador);
