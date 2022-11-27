@@ -1,0 +1,15 @@
+.login-toggleR{
+    display: flex;
+    background-color: #73AD21 !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.register-toggleR{
+    display: flex;
+    background-color: white !important;
+    color: #73AD21;
+    align-items: center;
+    justify-content: center;
+}

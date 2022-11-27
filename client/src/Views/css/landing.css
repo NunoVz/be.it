@@ -24,10 +24,18 @@
     background-repeat: no-repeat;
 }
 .banner-text{
+    top: 5vh;
+    display: flex;
     position: absolute;
-    color: white;
-    text-align: center;
     z-index: 1;
+    width: 100vw;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 25em;
+    color: rgba(111, 191, 88, 1);
+    ;
 }
 #about-us{
     width: 100vw;

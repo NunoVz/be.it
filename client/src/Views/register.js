@@ -1,7 +1,8 @@
 import React from 'react';
 
 
-import "../style.css";
+import "./css/login.css";
+import "./css/register.css";
 
 
 
@@ -10,9 +11,23 @@ const register = () => {
 
     return (
         <div className='body'>
-            <p>Ola register</p>
+            <section id='login'>
+                <h1>REGISTER</h1>
+                <div className='toggle-container'>
+                    <a className='toggleOption login-toggleR' href='./login'>Login</a>
+                    <div className='toggleOption register-toggleR' href='./login'>Register</div>
+                </div>
+                <div className='container-round-text'>
+                    <form className='form1'>
+                        <div>Email</div>
+                        <input type="text" id="email" name="email"></input><br/>
+                        <div>Password</div>
+                        <input type="password" id="password" name="password"></input>
+                        <a className='logIn-button' href='./store'>Register</a>
+                    </form>
+                </div>
+            </section>
         </div>
-
     );
 }
 
