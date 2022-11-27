@@ -35,6 +35,14 @@ const Homeview = () => {
 
         <div className='body'>
             {console.log(prods)}
+            <div className='searchBar'>
+                <h1 className='Produtos'>Produtos</h1>
+                <div className='container'>
+                    <img className="searchIcon"src="assets/imgs/LUPA-13.png" alt='lupa'/>
+                    <input type="text" placeholder="Search..." />
+                    <h4 className='addButton'>+ADICIONAR</h4>
+                </div>
+            </div>
             <div className='containerGeral'>
                 {prodsAux != null &&
                     prodsAux.map(data => {
@@ -44,9 +52,14 @@ const Homeview = () => {
                                     <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img>
                                     <h2 className='produtocard-titulo'>{data.nome}</h2>
                                     <h3 className='produtoCard-preco'>{data.preco}/Kg</h3>
-                                    <p className='produtoCard-desc'>{data.local}</p>
-                                    <div className='produtoCard-comprar'>
-                                        <a href=''>Comprar</a>
+                                    <div className='produtoCard-line-container'>
+                                        <div className='location-container'>
+                                            <img className='location-icon' src='assets/imgs/pin-13.png' alt=''></img>
+                                            <p className='produtoCard-desc'>{data.local}</p>
+                                        </div>
+                                        <div className='produtoCard-comprar'>
+                                            <a href=''>Contacto</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
