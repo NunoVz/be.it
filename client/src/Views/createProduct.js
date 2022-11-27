@@ -60,9 +60,9 @@ const CreateProduct = () => {
         <div className='body'>
             {butao ?
                 <div className='container-geral-create'>
-                    <h1 className='TogleSwitch' onClick={handleOpen}>Vender Residio!</h1>
+                    <h1 className='TogleSwitch' onClick={handleOpen}>VENDER RESIDUO!</h1>
                     <div className='container-form'>
-                        <h1 className='titulo'>Adicionar Produto</h1>
+                        <h1 className='titulo'>ADCIONAR PRODUTO</h1>
 
                         <form className='form-prod' onSubmit={handleSubmit}>
                             <div>Nome Produto</div>
@@ -79,15 +79,15 @@ const CreateProduct = () => {
                             <input type="text" id="tags" required name="tags"></input>
                             <div>Localidade</div>
                             <input type="text" id="local" required name="local"></input>
-                            <button className='submit-button' type="submit" value="Submeter"></button>
+                            <a className='submit-button' href='../store' type="submit" value="Submeter">SUBMETER</a>
                         </form>
                     </div>
                 </div> :
                 <div className='container-geral-create'>
-                    <h1 className='TogleSwitch' onClick={handleOpen}>Vender Produto!</h1>
+                    <h1 className='TogleSwitch' onClick={handleOpen}>VENDER PRODUTO!</h1>
 
                     <div className='container-form'>
-                        <h1 className='titulo'>Adicionar Residuos</h1>
+                        <h1 className='titulo'>ADCIONAR RESIDUOS</h1>
                         <form className='form-prod' style={{ height: "60vh" }} onSubmit={handleSubmit}>
                             <div>Nome Produto</div>
                             <input type="text" id="nome" name="nome"></input>
@@ -97,7 +97,7 @@ const CreateProduct = () => {
                             <input type="text" id="imagem" name="imagem"></input>
                             <div>Localidade</div>
                             <input type="text" id="local" name="local"></input>
-                            <button className='submit-button' type="submit" value="Submeter"></button>
+                            <a className='submit-button' href='../store' type="submit" value="Submeter">SUBMETER</a>
                         </form>
                     </div>
                 </div>}

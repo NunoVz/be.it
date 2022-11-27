@@ -126,3 +126,9 @@
 .logoFimLanding {
     padding: 30px;
 }
+
+.numerotele {
+    position: absolute;
+    font-family: Jost-Regular;
+    left: 5.3vw;
+}

@@ -14,15 +14,15 @@ const NavBar = () => {
     return (
         <div className='NavBar'>
             <div className='NavBarContainer'></div>
-                <li className='NavBarList'>
-                    <img src='assets/imgs/logo1-07_1.png' alt='logo' className='logo' />
-                </li>
-                <div className='ContainerLogin'>
+            <li className='NavBarList'>
+                <img src='assets/imgs/logo1-07_1.png' alt='logo' className='logo' />
+            </li>
+            <div className='ContainerLogin'>
 
 
                 <Link className='link' to="/store"> <li className='text'>LOJA</li></Link>
                 <div className="dropdown">
-                    <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/iconlogin.svg'></img>
+                    <img onClick={handleOpen} className='Iconlogin' alt='login' src='assets/imgs/icone-13.png'></img>
                     {open ? (
                         <ul className="menu">
                             <li className="menu-item">

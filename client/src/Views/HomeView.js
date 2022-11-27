@@ -85,7 +85,7 @@ const Homeview = () => {
                         return (
                             <div className='produtoWrapper'>
                                 <div className='produtoCard'>
-                                    <img src='https://i.imgur.com/1Q1Z1Zu.png' alt=''></img>
+                                    <img src={data.imagem} alt=''></img>
                                     <h2 className='produtocard-titulo'>{data.nome}</h2>
                                     <h3 className='produtoCard-preco'>{data.preco}$/Kg</h3>
                                     <div className='produtoCard-line-container'>

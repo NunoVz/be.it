@@ -91,8 +91,8 @@
 .secRegister {
     position: relative;
     height: 100vh;
-    background-image: url(../fundo2-11_4.png);
-    background-size: contain;
+    background-image: url(../../../public/assets/imgs/fundo2-11\ 4.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }

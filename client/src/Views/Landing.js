@@ -42,7 +42,9 @@ const Landing = () => {
             <section id='contactos'>
                 <div className='contactos1'>
                     <h1>CONTACTOS</h1>
+
                 </div>
+                <h2 className='numerotele'> +351 913 231 442</h2>
                 <div className='logoFimLanding'>
                     <img src='assets/imgs/logo1-07 6.png' className='logoFimLanding' alt='logo' />
                 </div>
