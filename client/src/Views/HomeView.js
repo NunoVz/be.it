@@ -6,10 +6,14 @@ import useFetch from "./useFetch";
 
 const Homeview = () => {
     const { data: prodsAux, isPending } = useFetch('http://localhost:8000/getProds');
+    const [prods, setProds] = useState(prodsAux);
+
+    /*
     const [filter, setFilter] = useState("All");
     const [prods, setProds] = useState(prodsAux);
     useEffect(() => {
         let result = prodsAux;
+        console.log("Entrei Agora");
         switch (filter) {
             case "All":
                 result = prodsAux;
@@ -25,22 +29,15 @@ const Homeview = () => {
         setProds(result)
         setProds(result)
 
-    }, [filter, isPending]);
-    console.log(prods);
+    }, [filter, isPending]); */
+
     return (
 
         <div className='body'>
-            <div className='searchBar'>
-                <h1>Produtos</h1>
-                <img className='searchIcon' src='assets/imgs/LUPA-13.png' alt='lupa'/>
-                <form>
-                    <input type='text' placeholder='Pesquisar'/>
-                </form>
-                <div className='addButton'>+Adcionar</div>
-            </div>
+            {console.log(prods)}
             <div className='containerGeral'>
-                {prods != null &&
-                    prods.map(data => {
+                {prodsAux != null &&
+                    prodsAux.map(data => {
                         return (
                             <div className='produtoWrapper'>
                                 <div className='produtoCard'>
@@ -56,9 +53,6 @@ const Homeview = () => {
                         )
                     })
                 }
-
-
-
             </div>
         </div>
     );
