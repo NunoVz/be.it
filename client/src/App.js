@@ -14,6 +14,7 @@ import Register from "./Views/register"
 import Store from "./Views/store";
 import ProdPage from "./Views/prodpagina";
 import Homeview from './Views/HomeView';
+import CreateProduct from './Views/createProduct';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/produto" element={<ProdPage />} />
           <Route path="/store" element={<Store />} />
           <Route path="/homeview" element={<Homeview />} />
+          <Route path="/createProduct" element={<CreateProduct />} />
         </Routes>
       </Router>
     </div>
